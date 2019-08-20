@@ -38,7 +38,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    // opacity: 0.9;
     visibility: hidden;
 
     &.show{
@@ -54,12 +54,13 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+
     }
 
     &-nav{
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: rgba(darken($primary-color, 5), 0.7);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -70,7 +71,7 @@
     }
 
     &-branding{
-        background: $primary-color;
+        background: rgba($primary-color, 0.7);
         @include easeOut;        
         transform: translate3d(0, 100%, 0);
 
@@ -84,6 +85,7 @@
             background: url('../img/portrait.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color;
+            background-size: 100%;
 
         }
     }
