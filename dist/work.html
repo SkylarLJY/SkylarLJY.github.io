@@ -24,7 +24,7 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
 
           <li class="nav-item">
@@ -36,7 +36,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="/" class="nav-link">Contact</a>
+            <a href="./statics/resume.pdf" class="nav-link" target="_blank">
+              Resume</a
+            >
           </li>
         </ul>
       </nav>
@@ -46,38 +48,109 @@
       <h2 class="sm-heading">Check out some of my projects...</h2>
 
       <div class="projects">
+        <!-- mem frame -->
         <div class="item">
-          <a href="#!">
-            <img src="img/projects/memFrame.jpg" alt="Memory Frame" />
+          <div class="pic">
+            <img
+              src="img/projects/memFrame.jpg"
+              alt="Memory Frame"
+              title="tooltip"
+            />
+            <div class="overlay">
+              <div class="overlay-text">
+                <b>Memory Frame</b> <br>
+                A voice controlled electronic photo frame with an Android app
+                for user end photo management <br />
+                (Python, Android, Firebase, Alexa, Raspberry Pi)
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://firebasestorage.googleapis.com/v0/b/flask-iou-9eed9.appspot.com/o/Memory%20Frame.mp4?alt=media&token=8f9dcdb0-bcf8-4435-9956-484f9d807a34"
+            class="btn-light"
+          >
+            <i class="fas fa-video"></i>Video
           </a>
-          <a href="#" class="btn-light"> <i class="fas fa-video"></i>Video </a>
-          <a href="#" class="btn-dark"> <i class="fab fa-github"></i>GitHub </a>
+          <a href="https://github.com/Gordon-Yeh/Memory-Frame" class="btn-dark">
+            <i class="fab fa-github"></i>GitHub
+          </a>
+        </div>
+        <!-- sore way finder -->
+        <div class="item">
+          <div class="pic">
+            <img src="img/projects/swf.png" alt="Store Way-Finder" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <b>Store Way-Finder</b> <br>
+                A tracking system in speciality stores to help the customers to
+                locate themselves and find items <br />
+                (Python, AWS, MySQL, Raspberry Pi)
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://firebasestorage.googleapis.com/v0/b/flask-iou-9eed9.appspot.com/o/wayfinder.mp4?alt=media&token=c4c42f9b-c999-46b7-aa14-f759d0f5e69d"
+            class="btn-light"
+          >
+           <i class="fas fa-video"></i>Video</a>
+          <!-- <a href="#" class="btn-dark"> <i class="fab fa-github"></i>GitHub </a> -->
         </div>
 
+        <!-- bio museum -->
         <div class="item">
-          <a href="#!">
-            <img src="img/projects/project2.jpg" alt="project2" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i>Projects </a>
-          <a href="#" class="btn-dark"> <i class="fab fa-github"></i>GitHub </a>
-        </div>
+            <div class="pic">
+              <img
+                src="img/projects/bioMuseum.JPG"
+                alt="Memory Frame"
+                title="tooltip"
+              />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <b>Biodiversity Museum Lookup</b> <br/>
+                  A web app for complex queries on the database of a biodiversity museum for plant and animal specimens. 
+                  
+                  <br>
+                  (MySQL, Node.js)
+                </div>
+              </div>
+            </div>
+            <!-- <a href="#!" class="btn-light">
+              <i class="fas fa-video"></i>Video
+            </a> -->
+            <a href="https://github.com/annie001/MuseumApp" class="btn-dark">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
 
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/project3.jpg" alt="project3" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i>Projects </a>
-          <a href="#" class="btn-dark"> <i class="fab fa-github"></i>GitHub </a>
-        </div>
-
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/project1.jpg" alt="project1" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i>Projects </a>
-          <a href="#" class="btn-dark"> <i class="fab fa-github"></i>GitHub </a>
-        </div>
-      </div>
+          <!-- personal website -->
+          <div class="item">
+              <div class="pic">
+                <img
+                  src="img/projects/duke.png"
+                  alt="Memory Frame"
+                  title="tooltip"
+                />
+                <div class="overlay">
+                  <div class="overlay-text">
+                    <b>Personal Websites </b>
+                    <br>
+                    Built and maintaining personal websites for myself and other friends.
+                    <br>
+                    (HTML. SASS, CSS, JavaScript)
+                  </div>
+                </div>
+              </div>
+              <a
+                href="http://dmy1998.com/"
+                class="btn-light"
+              >
+                <i class="fas fa-link"></i>Link
+              </a>
+              <a href="https://github.com/dukedudu/dukedudu.github.io" class="btn-dark">
+                <i class="fab fa-github"></i>GitHub
+              </a>
+            </div>
     </main>
 
     <footer id="main-footer">Copyright &copy; 2019</footer>

@@ -96,7 +96,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -112,12 +112,18 @@ body {
       background: rgba(68, 68, 68, 0.7);
       z-index: -1; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -152,7 +158,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -194,6 +200,37 @@ main {
       opacity: 0.6;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects .overlay,
+  .projects .overlay-text {
+    width: 100%;
+    left: 0;
+    text-align: center; }
+
+.pic {
+  position: relative; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #444;
+  transition: all 0.5s ease-out; }
+
+.pic:hover .overlay {
+  opacity: 0.8; }
+
+.overlay-text {
+  color: get-text-color(#444);
+  font-size: 1em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: left; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
