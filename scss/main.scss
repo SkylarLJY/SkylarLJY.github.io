@@ -49,14 +49,16 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
+  height: 100%;
   height: calc(100vh-60px);
+
 
   .icons {
     margin-top: 1rem;
 
     a {
       padding: 0.4rem;
+      color: set-text-color($primary-color);
       &:hover {
         color: $secondary-color;
         @include easeOut();
@@ -113,6 +115,9 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+  span{
+    float: right;
+  }
 }
 
 //work

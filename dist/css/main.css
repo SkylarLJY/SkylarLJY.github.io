@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #535353;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(183, 183, 183, 0.7);
+    background: rgba(192, 192, 192, 0.7);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(196, 196, 196, 0.7);
+    background: rgba(205, 205, 205, 0.7);
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -56,7 +56,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #f79e02;
+      border: solid 3px #d55534;
       background-size: 100%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -70,11 +70,11 @@
     text-transform: capitalize;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #535353;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #f79e02; }
+      color: #d55534; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -92,8 +92,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #c4c4c4;
-  color: #000;
+  background: #cdcdcd;
+  color: #535353;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -109,7 +109,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(196, 196, 196, 0.7);
+      background: rgba(205, 205, 205, 0.7);
       z-index: -1; }
 
 h1,
@@ -126,7 +126,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(201, 201, 201, 0.5); }
+    background: rgba(210, 210, 210, 0.5); }
 
 a {
   color: white;
@@ -138,17 +138,19 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #f79e02; }
+  color: #d55534; }
 
 main {
   padding: 4rem;
+  height: 100%;
   height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      color: #535353; }
       main .icons a:hover {
-        color: #f79e02;
+        color: #d55534;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -165,7 +167,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #f79e02 3px solid;
+  border: #d55534 3px solid;
   height: 250px;
   width: 250px;
   background: url(../img/portrait.jpg);
@@ -185,9 +187,11 @@ main {
   grid-area: job3; }
 
 .job {
-  background: #d1d1d1;
+  background: #dadada;
   padding: 0.5rem;
-  border-bottom: #f79e02 5px solid; }
+  border-bottom: #d55534 5px solid; }
+  .job span {
+    float: right; }
 
 .projects {
   display: grid;
@@ -198,7 +202,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.6;
-      border-color: #f79e02;
+      border-color: #d55534;
       transition: all 0.5s ease-out; }
   .projects .overlay,
   .projects .overlay-text {
@@ -218,14 +222,14 @@ main {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: #c4c4c4;
+  background-color: #cdcdcd;
   transition: all 0.5s ease-out; }
 
 .pic:hover .overlay {
   opacity: 0.8; }
 
 .overlay-text {
-  color: get-text-color(#c4c4c4);
+  color: get-text-color(#cdcdcd);
   font-size: 1em;
   position: absolute;
   top: 20%;
@@ -238,11 +242,11 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #f79e02;
-    color: #000; }
+    background: #d55534;
+    color: #535353; }
 
 .btn-dark {
-  background: #454545;
+  background: #4e4e4e;
   color: #fff; }
 
 .btn-light {
@@ -252,8 +256,8 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #ababab;
-  color: #000;
+  background: #b4b4b4;
+  color: #535353;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
